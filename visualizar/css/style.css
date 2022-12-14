@@ -57,3 +57,38 @@
 }
 /*fim caris de partida*/
 
+.cardcampo-holdercampo {
+  margin: 2em 2em;
+}
+
+
+.cardcampo {
+
+  height: 100vh;/*altura37em*/
+  width: 600em;/*largura 600em*/
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: -2px;
+
+}
+.cardcampo .subtlecampo {
+  color: #000;
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.cardcampo i {
+  font-size: 3em;
+}
+
+
+
+.bgcampo-vscampo {
+
+
+  background: linear-gradient(0deg, #5ac8fa 50%,#ff6464 50%);
+}
+
