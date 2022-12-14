@@ -1,0 +1,59 @@
+
+/*fim caris de partida*/
+.body {
+  font-size: 15px;
+}
+
+.cardmeu-holder {
+  margin: 2em 2em;
+}
+
+.cardmeu {
+
+  height: 4em;
+  width: 64em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: -2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cardmeu2 {
+
+  height: 4em;
+  width: 64em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: -2px;
+
+}
+.cardmeu .subtle {
+  color: #000;
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.cardmeu i {
+  font-size: 3em;
+}
+
+
+
+.bg-vs {
+  background: -webkit-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: -o-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: -moz-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+}
+.bg-vs {
+  background: -webkit-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: -o-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: -moz-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+  background: linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
+}
+/*fim caris de partida*/
+
