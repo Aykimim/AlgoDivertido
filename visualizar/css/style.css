@@ -1,4 +1,3 @@
-
 /*fim caris de partida*/
 .body {
   font-size: 15px;
@@ -9,7 +8,6 @@
 }
 
 .cardmeu {
-
   height: 4em;
   width: 64em;
   padding: 0.5em 1em;
@@ -17,10 +15,9 @@
   display: table-cell;
   vertical-align: middle;
   letter-spacing: -2px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .cardmeu2 {
-
   height: 4em;
   width: 64em;
   padding: 0.5em 1em;
@@ -28,7 +25,6 @@
   display: table-cell;
   vertical-align: middle;
   letter-spacing: -2px;
-
 }
 .cardmeu .subtle {
   color: #000;
@@ -41,8 +37,6 @@
   font-size: 3em;
 }
 
-
-
 .bg-vs {
   background: -webkit-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
   background: -o-linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
@@ -56,22 +50,19 @@
   background: linear-gradient(70deg, #ff6464 50%, #5ac8fa 50%);
 }
 /*fim caris de partida*/
-
+/*tela ao meio vermelho e azul*/
 .cardcampo-holdercampo {
   margin: 2em 2em;
 }
 
-
 .cardcampo {
-
-  height: 100vh;/*altura37em*/
-  width: 600em;/*largura 600em*/
+  height: 100vh; /*altura37em*/
+  width: 600em; /*largura 600em*/
   padding: 0.5em 1em;
   border-radius: 0.25em;
   display: table-cell;
   vertical-align: middle;
   letter-spacing: -2px;
-
 }
 .cardcampo .subtlecampo {
   color: #000;
@@ -84,11 +75,43 @@
   font-size: 3em;
 }
 
-
-
 .bgcampo-vscampo {
+  background: linear-gradient(0deg, #5ac8fa 50%, #ff6464 50%);
+}
+/* fim tela ao meio vermelho e azul*/
 
-
-  background: linear-gradient(0deg, #5ac8fa 50%,#ff6464 50%);
+/*campo de batalha*/
+.bodybatalha {
+  font-size: 15px;
 }
 
+.cardbatalha-holderbatalha {
+  margin: 2em 2em;
+}
+
+.cardbatalha {
+  height: 100%;/*4em*/
+  width: 100%;/**/
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  /*display: table-cell;*/
+  vertical-align: middle;
+  letter-spacing: -2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cardbatalha i {
+  font-size: 3em;
+}
+
+.bgbatalha-vsvermelho {
+  
+  background: linear-gradient(#ff6464 100%, #5ac8fa 50%);
+}
+.bgbatalha-vsazul {
+
+  background: linear-gradient( #5ac8fa 100%, #ff6464 50% );
+}
+/**/
