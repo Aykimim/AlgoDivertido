@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Yugioh</title>
+    <title>Batalha</title>
     <style rel='stylesheet' type='text/css'>
     </style>
 
@@ -18,6 +18,14 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link href='/visualizar/css/style.css' rel='stylesheet' type='text/css' />
+    <!--calculadora-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- for styling -->
 
 </head>
 <div class="container">
@@ -27,18 +35,21 @@
             <div class="card mb-3" style="max-width: 300px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="/visualizar/img/fotosDosJogadores/jogador1.jfif" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Jubileu</h5>
+                            <p class="card-text">"Magia e o carai"</p>
+
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="card mb-3" style="max-width: 300px;">
+                <td colspan="3"><input type="text" id="resultvermelho"></td>
+               
             </div>
         </div>
 
@@ -48,6 +59,41 @@
                 <img src="/visualizar/img/vs.png" class="rounded mx-auto d-block img-fluid " height="100" width="100"
                     alt="...">
             </div>
+            <table id="calcu">
+                <tr>
+                    <td colspan="3"><input type="text" id="result"></td>
+                    <!-- clr() function will call clr to clear all value -->
+                    <td><input type="button" value="c" onclick="clr()" /> </td>
+                </tr>
+                <tr>
+                    <!-- create button and assign value to each button -->
+                    <!-- dis("1") will call function dis to display value -->
+                    <td><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)"> </td>
+                    <td><input type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)"> </td>
+                    <!-- solve function call function solve to evaluate value -->
+                    <td><input type="button" value="=" onclick="solve()"> </td>
+
+                    <td><input type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"> </td>
+                </tr>
+            </table>
         </div>
 
 
@@ -55,18 +101,19 @@
             <div class="card text-end " style="max-width: 300px;">
                 <div class="row g-0">
                     <div class="col-me-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="/visualizar/img/fotosDosJogadores\jogador2.jfif" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card dstitle</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Claudio</h5>
+                            <p class="card-text">"Vou sentar a mao na sua cara"</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="card mb-3" style="max-width: 300px;">
+
             </div>
         </div>
     </div>
@@ -77,3 +124,45 @@
     <div class="col-auto">.col-auto</div>
   </div>
 -->
+
+<!--java da calculadora-->
+<script>
+    // Function that display value
+    function dis(val) {
+        document.getElementById("result").value += val
+    }
+
+    function myFunction(event) {
+        if (event.key == '0' || event.key == '1'
+            || event.key == '2' || event.key == '3'
+            || event.key == '4' || event.key == '5'
+            || event.key == '6' || event.key == '7'
+            || event.key == '8' || event.key == '9'
+            || event.key == '+' || event.key == '-'
+            || event.key == '*' || event.key == '/')
+            document.getElementById("result").value += event.key;
+    }
+
+    var cal = document.getElementById("calcu");
+    cal.onkeyup = function (event) {
+        if (event.keyCode === 13) {
+            console.log("Enter");
+            let x = document.getElementById("result").value
+    
+            console.log(x);
+            solve();
+        }
+    }
+
+    // Function that evaluates the digit and return result
+    function solve() {
+        let x = document.getElementById("result").value
+        let y = math.evaluate(x)
+        document.getElementById("result").value = y
+    }
+
+    // Function that clear the display
+    function clr() {
+        document.getElementById("result").value = ""
+    }
+</script>

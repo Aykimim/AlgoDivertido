@@ -1,3 +1,33 @@
+
+table {
+    border: 1px solid rgb(255, 1, 1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    padding: 10px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 51, 51);
+}
+
+<!--separado-->
+
+/* calculadora*/
 /*fim caris de partida*/
 .body {
   font-size: 15px;
@@ -112,7 +142,7 @@
 }
 .bgbatalha-vsazul {
 
-  background: linear-gradient( #5ac8fa 100%, #ff6464 50% #2522ca );
+  background: linear-gradient( #5ac8fa 100%, #ff6464 50%);
 }
 /**/
 /*carrossel*/
